@@ -50,7 +50,7 @@ function PyrolysisScene({ setSelectedComponent }) {
         receiveShadow
       >
         <planeGeometry args={[30, 20]} />
-        <meshStandardMaterial color="#444" roughness={0.9} metalness={0.1} />
+        <meshStandardMaterial color="#ffffff" roughness={0.5} metalness={0.1} />
       </mesh>
 
       {/* Process equipment */}
