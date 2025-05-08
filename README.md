@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Visualisasi 3D Proses Pirolisis Oli Bekas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi ini menampilkan visualisasi 3D dari proses pengolahan oli bekas melalui metode pirolisis. Visualisasi ini menunjukkan seluruh rangkaian proses mulai dari tangki oli bekas hingga produk akhir berupa minyak dan gas.
 
-## Available Scripts
+## Deskripsi Proses
 
-In the project directory, you can run:
+Pirolisis adalah proses dekomposisi termal bahan organik pada suhu tinggi tanpa kehadiran oksigen. Dalam konteks pengolahan oli bekas, pirolisis mengubah oli bekas menjadi produk yang bermanfaat seperti bahan bakar cair, gas, dan residu karbon.
 
-### `npm start`
+Proses yang divisualisasikan meliputi:
+1. **Persiapan Bahan Baku** - Oli bekas disaring dan dipersiapkan dalam tangki umpan
+2. **Pemanasan** - Oli dipanaskan dalam reaktor pirolisis pada suhu 400-600°C
+3. **Pirolisis** - Terjadi dekomposisi termal menghasilkan uap hidrokarbon
+4. **Kondensasi** - Uap didinginkan dalam kondenser menjadi cairan
+5. **Pemisahan** - Produk dipisahkan menjadi minyak dan gas dalam tangki pemisah
+6. **Penyimpanan** - Minyak dan gas disimpan dalam tangki penyimpanan masing-masing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cara Menggunakan Aplikasi
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Jalankan aplikasi dengan perintah `npm start`
+2. Klik pada bagian-bagian peralatan dalam visualisasi 3D untuk melihat informasi detail
+3. Gunakan mouse untuk:
+   - Memutar model (klik dan geser)
+   - Zoom (scroll mouse)
+   - Pindahkan model (klik kanan dan geser)
+4. Panel informasi di sebelah kanan menampilkan detail komponen yang dipilih
 
-### `npm test`
+## Teknologi yang Digunakan
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js - UI framework
+- Three.js - Library 3D
+- React Three Fiber - React renderer untuk Three.js
+- React Three Drei - Koleksi utilitas untuk React Three Fiber
 
-### `npm run build`
+## Instalasi dan Menjalankan
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Aplikasi akan berjalan di [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

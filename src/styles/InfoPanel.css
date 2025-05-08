@@ -1,0 +1,126 @@
+.info-panel {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 350px;
+  max-width: 90vw;
+  max-height: calc(100vh - 100px);
+  background: rgba(15, 20, 30, 0.9);
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.info-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(0, 60, 120, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-panel-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #fff;
+}
+
+.info-panel-content {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 180px);
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-section h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #4a9df8;
+  font-weight: 500;
+}
+
+.info-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 10px;
+}
+
+.process-overview h3 {
+  font-size: 1rem;
+  margin: 20px 0 10px;
+  color: #4a9df8;
+  font-weight: 500;
+}
+
+.process-overview p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 15px;
+}
+
+.process-overview ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.process-overview li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .info-panel {
+    top: unset;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+    max-height: 70vh;
+  }
+  
+  .info-panel-header h2 {
+    font-size: 1.1rem;
+  }
+  
+  .info-panel-content {
+    max-height: calc(70vh - 60px);
+  }
+}
