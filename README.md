@@ -40,4 +40,6 @@ npm start
 
 Aplikasi akan berjalan di [http://localhost:3000](http://localhost:3000)
 
+pirolisis.netlify.app
+
 # pyrolysis-3d-visualization
