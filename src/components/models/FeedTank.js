@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
 const FeedTank = ({ position = [0, 0, 0], onClick }) => {
